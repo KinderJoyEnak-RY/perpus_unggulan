@@ -1,130 +1,76 @@
-    <div class="body">
-        <!-- <div class="login-box"> -->
-        <div class="box_tengah">
-            <div class="login-logo">
-                <!-- <b>Login</b> Login Sistem Perpustakaan UA -->
-            </div>
+<!DOCTYPE html>
+<html lang="en">
 
-            <!-- /.login-logo -->
-            <div class="login-box-body">
-                <p class="login-box-msg login">Login Sistem Perpustakaan UA</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Bootstrap 4 CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- AdminLTE CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.0.5/css/adminlte.min.css">
+</head>
 
-                <!-- login dengan scan -->
-                <div id="app" class="row box">
-                    <div class="col-md-6 col-md-offset-4 sidebar">
-                        <!-- <ul>
-                            <li v-if="cameras.length === 0" class="empty">No cameras found</li>
-                            <li v-for="camera in cameras">
-                                <span v-if="camera.id == activeCameraId" :title="formatName(camera.name)" class="active"><input type="radio" class="align-middle mr-1" checked> {{ formatName(camera.name) }}</span>
-                                <span v-if="camera.id != activeCameraId" :title="formatName(camera.name)">
-                                    <a @click.stop="selectCamera(camera)"> <input type="radio" class="align-middle mr-1">@{{ formatName(camera.name) }}</a>
-                                </span>
-                            </li>
-                        </ul> -->
-                        <div class="clearfix"></div>
-                        <!-- form scan buat menyambungkan scanernya -->
-                        <form action="" method="POST" id="myForm">
-                            <fieldset class="scheduler-border">
-                                <legend class="scheduler-border"> Form Scan </legend>
-                    
+<body class="hold-transition login-page">
 
-                            </fieldset>
-                        </form>
-
-                        <!-- untuk meriques data form -->
-                        <?php
-
-                        $host = 'localhost';
-                        $name = 'root';
-                        $dbname = 'perpusmael';
-                        $dbpass = '';
-
-                        $con = mysqli_connect($host, $name, $dbpass, $dbname);
-
-                        // $con = $this->db->get('anggota');//nama tabel db
-                        if (!empty($_POST['qrcode'])) {
-                            // password berdasarkan username dan pass
-                            // |username|huidui7862761|
-
-                            $qrcode = $_POST['qrcode'];
-                            $array = explode('|', $qrcode); // fungsi php untuk memecah array tanda | untuk penanda
-
-                            $id_anggota = $array[1]; // 1 berasal dari array yang dimulai dari 0
-                            $nis = $array[2];
-                            $nama = $array[3];
-                            $kelas = $array[4];
-                            $username = $array[5];
-                            $password = $array[6];
-                            $level = $array[7];
-
-                            $sql = "SELECT * FROM anggota WHERE id_anggota = '$id_anggota' AND nis = '$nis' AND nama = '$nama' AND kelas = '$kelas' AND username = '$username' AND password = '$password' AND level = '$level'";
-                            $resultSQL = mysqli_query($con, $sql);
-                            $result = mysqli_fetch_array($resultSQL);
-
-                            if (mysqli_num_rows($resultSQL) > 0) {
-
-                                $_SESSION['username'] = $result['username'];
-                                $_SESSION['level'] = $result['level'];
-
-                                // redirect('dashboard');
-                                if ($level == 'Administrator') {
-                                    redirect('dashboard');
-                                } elseif ($level == 'Siswa') {
-                                    redirect('tampilan_user/dashboard_user');
-                                }
-                            }
-                        }
-                        ?>
-                                <input type="text" name="qrcode" id="code" autofocus readonly> <?php $img = "https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=QR testing QR muncul ga ya " ?>
-
-                    </div>
-                    <div class="col-xs-12 preview-container camera">
-                        <video id="preview" class="thumbnail"></video>
-                    </div>
-                </div>
-                <!-- scanner -->
-
-                <!-- login pakai username dan password -->
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="#"><b>Login Sistem</b> Perpustakaan UA</a>
+        </div>
+        <div class="card">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">Sign in to Start Your Session</p>
                 <?= $this->session->flashdata('info'); ?>
 
                 <form action="<?= base_url() ?>auth/proses_login" method="post">
-
-                    <div class="form-group has-feedback">
+                    <div class="input-group mb-3">
                         <input type="text" name="username" class="form-control" placeholder="Username" required>
-                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-user"></span>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="form-group has-feedback">
-                        <input type="password" name="password" class="form-control" placeholder="Password" required>
-                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    <div class="input-group mb-3">
+                        <input type="passwword" name="password" class="form-control" placeholder="Password" required>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- <div class="form-group has-feedback">
-                    <select type="text" class="form-control" placeholder="Level" id="level" name="level" required>
-                        <option value="">- Pilih Status - </option>
-                        <option value="Administrator">Administrator</option>
-                        <option value="Guru">Guru</option>
-                        <option value="Siswa">Siswa</option>
-                    </select>
-                </div> -->
-
                     <div class="row">
-                        <div class="col-xs-8">
-
+                        <div class="col-8">
+                            <!-- optional content -->
                         </div>
-                        <!-- /.col -->
-                        <div class="col-xs-4">
-                            <button type="submit" class="btn btn-primary btn-block btn-flat">Login</button>
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
                         </div>
-                        <!-- /.col -->
                     </div>
                 </form>
 
-                <d>Belum punya Akun ?</d>
-                <a href="<?= base_url() ?>Auth/registrasi" class="text-center">Registrasi</a>
-
+                <p class="mb-1">
+                    <a href="#">I forgot my password</a>
+                </p>
+                <p>
+                    <a href="<?= base_url() ?> Auth/registrasi" class="text-center">Registrasi Anggota Baru</a>
+                </p>
             </div>
-            <!-- /.login-box-body -->
+            <!-- /.login-card-body -->
         </div>
-        <!-- /.login-box -->
     </div>
+    <!-- /.login-box -->
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- Bootstrap 4 JS CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- AdminLTE JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.0.5/js/adminlte.min.js" integrity="sha512-5S9Jw4RbXWB3v5IbTlLue7P9ulNkD/DQoQlYYaBgHjnGkF7 Tommy8DzQh4wI8ir5tjz2y2Fm3iUg0zEouPQTNKUj2kg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
