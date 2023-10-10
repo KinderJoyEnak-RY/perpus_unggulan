@@ -47,67 +47,34 @@ class Peminjaman extends CI_Controller{
 
     public function simpan()
     {
-        // $data = array(
-        //     'id_peminjaman'  => $this->input->post('id_peminjaman'),
-        //     'id_anggota'     => $this->input->post('id_anggota'),
-        //     'id_buku'        => $this->input->post('id_buku'),
-        //     'tanggal_pinjam' => $this->input->post('tanggal_pinjam'),
-        //     'tanggal_kembali'=> $this->input->post('tanggal_kembali'),
-        // );
-        // $query = $this->db->insert('peminjaman', $data);
-        // if ($query = true) {
-        //     $this->session->set_flashdata('info','Data Transaksi berhasil di Simpan');
-        //     redirect('peminjaman');
-        // }
+        $data = array(
+            'id_peminjaman'  => $this->input->post('id_peminjaman'),
+            'id_anggota'     => $this->input->post('id_anggota'),
+            'id_buku'        => $this->input->post('id_buku'),
+            'judul_buku'     => $this->input->post('judul_buku'),
+            'penerbit'       => $this->input->post('penerbit'),
+            'pengarang'      => $this->input->post('pengarang'),
+            'tanggal_pinjam' => $this->input->post('tanggal_pinjam'),
+            'tanggal_kembali'=> $this->input->post('tanggal_kembali'),
+        );
+        $query = $this->db->insert('peminjaman', $data);
+        if ($query = true) {
+            $this->session->set_flashdata('info','Data Transaksi berhasil di Simpan');
+            redirect('peminjaman');
+        }
         
         // Mendapatkan hasil scan QR code
-        $hasilScanQRCode = $this->input->post('qrcode');
-
-        if (!empty($hasilScanQRCode)) {
-            $dataQRCode = explode('|', $hasilScanQRCode);
-            $data = array(
-                'id_peminjaman' => $this->input->post('id_peminjaman'),
-                'id_anggota' => $this->input->post('id_anggota'),
-                'id_buku' => $dataQRCode[0],
-                'judul_buku' => $dataQRCode[2],
-                'pengarang' => $dataQRCode[3],
-                'penerbit' => $dataQRCode[4],
-                'tanggal_pinjam' => $this->input->post('tanggal_pinjam'),
-                'tanggal_kembali' => $this->input->post('tanggal_kembali'),
-            );
-        } else {
-            // Jika tidak ada hasil scan QR code, ambil data dari input select buku
-            $data = array(
-                'id_peminjaman' => $this->input->post('id_peminjaman'),
-                'id_anggota' => $this->input->post('id_anggota'),
-                'id_buku' => implode(',', $this->input->post('id_buku')),
-                'judul_buku' => '', // Ambil dari input select buku
-                'pengarang' => '', // Ambil dari input select buku
-                'penerbit' => '', // Ambil dari input select buku
-                'tanggal_pinjam' => $this->input->post('tanggal_pinjam'),
-                'tanggal_kembali' => $this->input->post('tanggal_kembali'),
-            );
-        }
+       
     
          // Simpan data ke dalam database
         $query = $this->db->insert('peminjaman', $data);
     
-        if ($query) {
-            if (!empty($hasilScanQRCode)) {
-                // Mengurangi stok buku
-                $this->db->set('jumlah_buku', 'jumlah_buku - 1', FALSE);
-                $this->db->where('id_buku', $data['id_buku']);
-                $this->db->update('buku');
-            } else {
-                // Kurangi stok buku jika menggunakan input select buku
+    
                 foreach ($selectedBooks as $selectedBook) {
                     $this->db->set('jumlah_buku', 'jumlah_buku - 1', FALSE);
                     $this->db->where('id_buku', $selectedBook);
                     $this->db->update('buku');
-                }
-            }
     
-            $this->session->unset_userdata('dataQRCode'); // Hapus data QR code dari session
             $this->session->set_flashdata('info', 'Data Transaksi berhasil di Simpan');
             redirect('peminjaman');
         }

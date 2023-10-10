@@ -1,44 +1,44 @@
 <?php
     $tanggal_pinjam = date('y-m-d');
 
-    $tujuh_hari = mktime(0,0,0,date("n"),date("j") + 7, date("y"));
-    $tanggal_kembali = date('y-m-d', $tujuh_hari); //berfungsi untuk menghitung selisih tgl pinjam dan tgl kembali
+    $empatbelas_hari = mktime(0,0,0,date("n"),date("j") + 14, date("y"));
+    $tanggal_kembali = date('y-m-d', $empatbelas_hari); //berfungsi untuk menghitung selisih tgl pinjam dan tgl kembali
    
-    // $hasilScanQRCode = '<?php echo isset($result) ? $result : ""; ';
-    // $id_bukuQRCode = '';
-    // $judul_bukuQRCode = '';
-    // $pengarangQRCode = '';
-    // $penerbitQRCode = '';
+    $hasilScanQRCode = '<?php echo isset($result) ? $result : ""; ?>';
+    $id_bukuQRCode = '';
+    $judul_bukuQRCode = '';
+    $pengarangQRCode = '';
+    $penerbitQRCode = '';
 
-    // if (!empty($hasilScanQRCode)) {
-    //     $dataQRCode = explode('|', $hasilScanQRCode);
-    //     if (isset($dataQRCode[0])) {
-    //         $id_bukuQRCode = $dataQRCode[0];
-    //     } else {
-    //         $id_bukuQRCode = '';
-    //     }
-    //     if (isset($dataQRCode[2])) {
-    //         $judul_bukuQRCode = $dataQRCode[2];
-    //     } else {
-    //         $judul_bukuQRCode = '';
-    //     }
-    //     if (isset($dataQRCode[3])) {
-    //         $pengarangQRCode = $dataQRCode[3];
-    //     } else {
-    //         $pengarangQRCode = '';
-    //     }
-    //     if (isset($dataQRCode[4])) {
-    //         $penerbitQRCode = $dataQRCode[4];
-    //     } else {
-    //         $penerbitQRCode = '';
-    //     }
-    // }
+    if (!empty($hasilScanQRCode)) {
+        $dataQRCode = explode('|', $hasilScanQRCode);
+        if (isset($dataQRCode[0])) {
+            $id_bukuQRCode = $dataQRCode[0];
+        } else {
+            $id_bukuQRCode = '';
+        }
+        if (isset($dataQRCode[2])) {
+            $judul_bukuQRCode = $dataQRCode[2];
+        } else {
+            $judul_bukuQRCode = '';
+        }
+        if (isset($dataQRCode[3])) {
+            $pengarangQRCode = $dataQRCode[3];
+        } else {
+            $pengarangQRCode = '';
+        }
+        if (isset($dataQRCode[4])) {
+            $penerbitQRCode = $dataQRCode[4];
+        } else {
+            $penerbitQRCode = '';
+        }
+    }
 ?>
 
 
 <!-- Script untuk menangani kamera -->
 <script src="<?= base_url()?>assets/https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-<!-- <script src="<?= base_url()?>assets/https://unpkg.com/vue-web-cam"></script> -->
+<script src="<?= base_url()?>assets/https://unpkg.com/vue-web-cam"></script>
 
 <div class="body">
     <div class="col-md-12">
@@ -70,8 +70,8 @@
                             </div>
                         </table>
 
-                        <!-- <div class="col-md-6 col-md-offset-4 sidebar"> -->
-                            <!-- <ul>
+                        <div class="col-md-6 col-md-offset-4 sidebar">
+                            <ul>
                                 <li v-if="cameras.length === 0" class="empty">No cameras found</li>
                                 <li v-for="camera in cameras">
                                     <span v-if="camera.id == activeCameraId" :title="formatName(camera.name)" class="active">
@@ -81,42 +81,42 @@
                                         <a @click.stop="selectCamera(camera)"><input type="radio" class="align-middle mr-1">@{{ formatName(camera.name) }}</a>
                                     </span>
                                 </li>
-                            </ul> -->
-                            <!-- <div class="clearfix"></div> -->
+                            </ul>
+                            <div class="clearfix"></div>
                             <!-- form scan buat menyambungkan scanernya -->
-                            <!-- <fieldset class="scheduler-border">
+                            <fieldset class="scheduler-border">
                                 <legend class="scheduler-border"> Form Scan QRCode</legend>
                                 <input type="hidden" name="qrcode" id="code" autofocus readonly>
-                            </fieldset> -->
+                            </fieldset>
 
                             <?php
-                                // $qrcode_data = $this->input->post('qrcode');
-                                // if (!empty($qrcode_data)) {
-                                //     $qrcode_array = explode('|', $qrcode_data);
-                                //     if (count($qrcode_array) >= 7) {
-                                //         $id_buku = $qrcode_array[0];
-                                //         $isbn = $qrcode_array[1];
-                                //         $judul_buku = $qrcode_array[2];
-                                //         $pengarang = $qrcode_array[3];
-                                //         $penerbit = $qrcode_array[4];
-                                //         $tahun_terbit = $qrcode_array[5];
+                                $qrcode_data = $this->input->post('qrcode');
+                                if (!empty($qrcode_data)) {
+                                    $qrcode_array = explode('|', $qrcode_data);
+                                    if (count($qrcode_array) >= 7) {
+                                        $id_buku = $qrcode_array[0];
+                                        $isbn = $qrcode_array[1];
+                                        $judul_buku = $qrcode_array[2];
+                                        $pengarang = $qrcode_array[3];
+                                        $penerbit = $qrcode_array[4];
+                                        $tahun_terbit = $qrcode_array[5];
 
-                                //         $sql = "SELECT * FROM buku WHERE id_buku = '$id_buku' AND isbn = '$isbn' AND judul_buku = '$judul_buku' AND pengarang = '$pengarang' AND penerbit = '$penerbit' AND tahun_terbit = '$tahun_terbit'";
-                                //         $resultSQL = $this->db->query($sql)->row_array();
+                                        $sql = "SELECT * FROM buku WHERE id_buku = '$id_buku' AND isbn = '$isbn' AND judul_buku = '$judul_buku' AND pengarang = '$pengarang' AND penerbit = '$penerbit' AND tahun_terbit = '$tahun_terbit'";
+                                        $resultSQL = $this->db->query($sql)->row_array();
 
-                                //         if ($resultSQL) {
-                                //             $_SESSION['id_buku'] = $resultSQL['id_buku'];
-                                //             $_SESSION['judul_buku'] = $resultSQL['judul_buku'];
-                                //             $_SESSION['pengarang'] = $resultSQL['pengarang'];
-                                //             $_SESSION['penerbit'] = $resultSQL['penerbit'];
-                                //         }
-                                //     }
-                                // }
+                                        if ($resultSQL) {
+                                            $_SESSION['id_buku'] = $resultSQL['id_buku'];
+                                            $_SESSION['judul_buku'] = $resultSQL['judul_buku'];
+                                            $_SESSION['pengarang'] = $resultSQL['pengarang'];
+                                            $_SESSION['penerbit'] = $resultSQL['penerbit'];
+                                        }
+                                    }
+                                }
                             ?>
-                        <!-- </div> -->
-                        <!-- <div class="col-xs-12 preview-container camera">
+                        </div>
+                        <div class="col-xs-12 preview-container camera">
                             <video id="preview" class="thumbnail"></video>
-                        </div> -->
+                        </div>
 
                         <!-- <div class="form-group">
                             <label for="judul_buku" class="col-sm-2 control-label">Judul Buku</label>
@@ -128,7 +128,7 @@
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">Buku</label>
                             <div class="col-sm-8">
-                                <select name="id_buku" id="id_buku" class="form-control select2">
+                                <select name="id_buku" id="id_buku" class="form-control select2" required>
                                     <option value="">- Pilih Buku - </option>
                                     <?php foreach($buku as $row){?>
                                         <option value="<?= $row->id_buku; ?>" data-judul="<?= $row->judul_buku; ?>" data-pengarang="<?= $row->pengarang; ?>" data-penerbit="<?= $row->penerbit; ?>"><?= $row->judul_buku; ?></option>
@@ -203,7 +203,7 @@
             });
         });
     </script>
-    <!-- <script> 
+    <script> 
         // Mendapatkan hasil scan QR code
         var hasilScanQRCode = '<?php echo isset($result) ? $result : ""; ?>';
 
@@ -229,10 +229,10 @@
             $("#tabelData").append(newRow);
             
             // Mereset input pilih buku
-            document.getElementsByName("id_buku")[0].value = id_buku;
+            // document.getElementsByName("id_buku")[0].value = id_buku;
         }
 
-    </script> -->
+    </script>
 
 <script>
     function tambahBuku() {
@@ -262,13 +262,31 @@
             $("#tabelData").append(newRow);
 
             // Mereset input pilih buku
-            document.getElementsByName("id_buku")[0].value = "";
+            // document.getElementsByName("id_buku")[0].value = "";
         }
     }
 
     function hapusBuku(button) {
         $(button).closest("tr").remove();
     }
+
+    $.ajax({
+    url: 'Peminjaman/simpan',  // Gantikan dengan URL tujuan pengiriman data
+    method: 'POST',
+    data: {
+        id_buku: id_buku,
+        judul_buku: judul_buku,
+        pengarang: pengarang,
+        penerbit: penerbit
+    },
+    success: function(response) {
+        console.log('Data berhasil disimpan');
+    },
+    error: function(error) {
+        console.log('Error menyimpan data', error);
+    }
+});
+
 
 </script>
 </div>
