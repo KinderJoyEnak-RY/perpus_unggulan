@@ -63,10 +63,19 @@ class M_peminjaman Extends CI_Model{
         return true;
     }
 
+    // public function detailpinjam($id_peminjaman)
+    // {
+    //     $this->db->where('id_peminjaman', $id_peminjaman);
+    //     return $this->db->get('peminjaman')->row_array();
+    // }
+
     public function detailpinjam($id_peminjaman)
     {
-        $this->db->where('id_peminjaman', $id_peminjaman);
-        return $this->db->get('peminjaman')->row_array();
+    $this->db->select('peminjaman.*, buku.judul_buku, buku.pengarang, buku.penerbit');
+    $this->db->from('peminjaman');
+    $this->db->join('buku', 'peminjaman.id_buku = buku.id_buku');
+    $this->db->where('peminjaman.id_peminjaman', $id_peminjaman);
+    return $this->db->get()->row_array();
     }
 
     public function hapus($id)

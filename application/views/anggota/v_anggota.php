@@ -7,7 +7,7 @@
 <div class="row">
     <div class="col-md-12">
         <a href="<?= base_url()?>anggota/tambah_anggota" class="btn btn-success"><i class="fa fa-plus"></i> Tambah Anggota</a>
-        <a href="<?= base_url()?>anggota/print" class="btn btn-info"><i class="fa fa-print"></i> Print Anggota</a>
+        <!-- <a href="<?= base_url()?>anggota/print" class="btn btn-info"><i class="fa fa-print"></i> Print Anggota</a> -->
     </div>
 </div>
 <br>
@@ -68,7 +68,8 @@
                                 <a href="<?= base_url()?>Anggota/detail/<?= $row->id_anggota;?>" class="btn btn-info btn-xs">Detail</a>
                                 <a href="<?= base_url()?>Anggota/edit/<?= $row->id_anggota;?>" class="btn btn-success btn-xs">Edit</a>
                                 <a href="<?= base_url()?>Anggota/hapus/<?= $row->id_anggota;?>" class="btn btn-danger btn-xs" onclick="return confirm('Yakin mau manghapus ?');">Hapus</a>
-                                <a href="<?= base_url()?>Anggota/cetak_kartu_ang/<?= $row->id_anggota;?>" class="btn btn-primary fa fa-print "> Cetak Kartu</a>
+                                <a href="<?= base_url()?>Anggota/cetak_kartu_ang/<?= $row->id_anggota;?>" class="btn btn-primary fa fa-print" onclick="window.open(this.href, 'NamaJendelaBaru', 'width=800,height=600'); return false;"> Cetak Kartu</a>
+
                             </td>
                         </tr>
                     <?php }

@@ -13,14 +13,12 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($data['buku_dipinjam'] as $buku) { ?>
-                    <tr>
-                        <td><?= $buku->id_buku; ?></td>
-                        <td><?= $buku->judul_buku; ?></td>
-                        <td><?= $buku->pengarang; ?></td>
-                        <td><?= $buku->penerbit; ?></td>
-                    </tr>
-                <?php } ?>
+                <tr>
+                    <td><?= $data['id_buku']; ?></td>
+                    <td><?= $data['judul_buku']; ?></td>
+                    <td><?= $data['pengarang']; ?></td>
+                    <td><?= $data['penerbit']; ?></td>
+                </tr>
             </tbody>
         </table>
     </div>

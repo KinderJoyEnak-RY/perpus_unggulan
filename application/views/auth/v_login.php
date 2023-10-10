@@ -12,7 +12,7 @@
                 <!-- login dengan scan -->
                 <div id="app" class="row box">
                     <div class="col-md-6 col-md-offset-4 sidebar">
-                        <ul>
+                        <!-- <ul>
                             <li v-if="cameras.length === 0" class="empty">No cameras found</li>
                             <li v-for="camera in cameras">
                                 <span v-if="camera.id == activeCameraId" :title="formatName(camera.name)" class="active"><input type="radio" class="align-middle mr-1" checked> {{ formatName(camera.name) }}</span>
@@ -20,13 +20,14 @@
                                     <a @click.stop="selectCamera(camera)"> <input type="radio" class="align-middle mr-1">@{{ formatName(camera.name) }}</a>
                                 </span>
                             </li>
-                        </ul>
+                        </ul> -->
                         <div class="clearfix"></div>
                         <!-- form scan buat menyambungkan scanernya -->
                         <form action="" method="POST" id="myForm">
                             <fieldset class="scheduler-border">
                                 <legend class="scheduler-border"> Form Scan </legend>
-                                <input type="text" name="qrcode" id="code" autofocus readonly>
+                    
+
                             </fieldset>
                         </form>
 
@@ -74,6 +75,7 @@
                             }
                         }
                         ?>
+                                <input type="text" name="qrcode" id="code" autofocus readonly> <?php $img = "https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=QR testing QR muncul ga ya " ?>
 
                     </div>
                     <div class="col-xs-12 preview-container camera">

@@ -33,6 +33,7 @@
             <tbody>
                 <?php
                     foreach ($data as $row) {
+                        // var_dump($row);
                         $tanggal_kembali = new DateTime($row->tanggal_kembali);
                         $tanggal_sekarang = new DateTime();
                         $selisih = $tanggal_sekarang->diff($tanggal_kembali)->format("%a");

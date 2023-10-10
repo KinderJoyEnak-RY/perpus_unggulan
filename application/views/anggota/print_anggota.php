@@ -3,7 +3,7 @@
     <head>
 		<link rel="stylesheet" href="<?= base_url()?>assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?= base_url()?>assets/bower_components/font-awesome/css/font-awesome.min.css">
-		<title><?= $title_web;?></title>
+		<title>Cetak Kartu Anggota</title>
 		<style>
 			body {
 				background: rgba(0,0,0,0.2);
