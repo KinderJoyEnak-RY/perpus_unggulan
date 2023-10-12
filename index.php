@@ -1,5 +1,5 @@
 <?php
-/**
+/** 
  * CodeIgniter
  *
  * An open source application development framework for PHP
@@ -110,7 +110,7 @@ switch (ENVIRONMENT)
  * use an absolute (full) server path.
  * For more info please see the user guide:
  *
- * https://codeigniter.com/userguide3/general/managing_apps.html
+ * https://codeigniter.com/user_guide/general/managing_apps.html
  *
  * NO TRAILING SLASH!
  */
