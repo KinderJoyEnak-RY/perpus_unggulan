@@ -21,27 +21,31 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Nama Pengguna</label>
+                                        <label>Nama Pengguna *</label>
                                         <input type="text" class="form-control" name="nama" required="required" placeholder="Nama Pengguna">
                                     </div>
                                     <div class="form-group">
-                                        <label>Tempat Lahir</label>
+                                        <label>Tempat Lahir *</label>
                                         <input type="text" class="form-control" name="lahir" required="required" placeholder="Contoh : Yogyakarta">
                                     </div>
                                     <div class="form-group">
-                                        <label>Tanggal Lahir</label>
+                                        <label>Tanggal Lahir *</label>
                                         <input type="date" class="form-control" name="tgl_lahir" required="required" placeholder="Contoh : 2000-02-03">
                                     </div>
                                     <div class="form-group">
-                                        <label>Username</label>
+                                        <label>Username *</label>
                                         <input type="text" class="form-control" name="user" required="required" placeholder="Username">
                                     </div>
                                     <div class="form-group">
-                                        <label>Password</label>
+                                        <label>Password *</label>
                                         <input type="password" class="form-control" name="pass" required="required" placeholder="Password">
                                     </div>
                                     <div class="form-group">
-                                        <label>Level</label>
+                                        <label>Kelas *</label>
+                                        <input type="text" class="form-control" name="kelas" required="required" placeholder="Kelas">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Level *</label>
                                         <select name="level" class="form-control" required="required">
                                             <option>Petugas</option>
                                             <option>Anggota</option>
@@ -50,27 +54,27 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Jenis Kelamin</label>
+                                        <label>Jenis Kelamin *</label>
                                         <br />
                                         <input type="radio" name="jenkel" value="Laki-Laki" required="required"> Laki-Laki
                                         <br />
                                         <input type="radio" name="jenkel" value="Perempuan" required="required"> Perempuan
                                     </div>
                                     <div class="form-group">
-                                        <label>Telepon</label>
-                                        <input id="uintTextBox" class="form-control" name="telepon" required="required" placeholder="Contoh : 089618173609">
+                                        <label>Telepon * </label>
+                                        <input id="uintTextBox" class="form-control" required="required" name="telepon" placeholder="Contoh : 089618173609">
                                     </div>
                                     <div class="form-group">
-                                        <label>E-mail</label>
-                                        <input type="email" class="form-control" name="email" required="required" placeholder="Contoh : randisyustico@gmail.com">
+                                        <label>E-mail *</label>
+                                        <input type="email" class="form-control" required="required" name="email" placeholder="Contoh : randisyustico@gmail.com">
                                     </div>
                                     <div class="form-group">
                                         <label>Pas Foto</label>
                                         <input type="file" accept="image/*" name="gambar">
                                     </div>
                                     <div class="form-group">
-                                        <label>Alamat</label>
-                                        <textarea class="form-control" name="alamat" required="required"></textarea>
+                                        <label>Alamat *</label>
+                                        <textarea class="form-control" required="required" name="alamat"></textarea>
                                     </div>
                                 </div>
                             </div>

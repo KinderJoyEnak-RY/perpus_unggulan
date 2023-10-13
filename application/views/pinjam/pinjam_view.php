@@ -45,6 +45,7 @@
 									foreach ($pinjam->result_array() as $isi) {
 										$anggota_id = $isi['anggota_id'];
 										$ang = $this->db->query("SELECT * FROM tbl_login WHERE anggota_id = '$anggota_id'")->row();
+										echo '<pre>' , print_r($ang) , '</pre>';
 
 										$pinjam_id = $isi['pinjam_id'];
 										$denda = $this->db->query("SELECT * FROM tbl_denda WHERE pinjam_id = '$pinjam_id'");

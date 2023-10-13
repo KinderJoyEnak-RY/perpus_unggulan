@@ -49,6 +49,7 @@ class User extends CI_Controller
 		$pass = md5(htmlentities($this->input->post('pass', TRUE)));
 		$level = htmlentities($this->input->post('level', TRUE));
 		$jenkel = htmlentities($this->input->post('jenkel', TRUE));
+		$kelas = htmlentities($this->input->post('kelas', TRUE));
 		$telepon = htmlentities($this->input->post('telepon', TRUE));
 		$status = htmlentities($this->input->post('status', TRUE));
 		$alamat = htmlentities($this->input->post('alamat', TRUE));
@@ -79,7 +80,8 @@ class User extends CI_Controller
 				'user' => $user,
 				'pass' => $pass,
 				'level' => $level,
-				'tempat_lahir' => $_POST['lahir'],
+				'kelas'=> $kelas,
+ 				'tempat_lahir' => $_POST['lahir'],
 				'tgl_lahir' => $_POST['tgl_lahir'],
 				'level' => $level,
 				'email' => $_POST['email'],
@@ -160,6 +162,7 @@ class User extends CI_Controller
 		$pass = htmlentities($this->input->post('pass'));
 		$level = htmlentities($this->input->post('level', TRUE));
 		$jenkel = htmlentities($this->input->post('jenkel', TRUE));
+		$kelas = htmlentities($this->input->post('kelas', TRUE));
 		$telepon = htmlentities($this->input->post('telepon', TRUE));
 		$status = htmlentities($this->input->post('status', TRUE));
 		$alamat = htmlentities($this->input->post('alamat', TRUE));
@@ -184,6 +187,7 @@ class User extends CI_Controller
 					'tempat_lahir' => $_POST['lahir'],
 					'tgl_lahir' => $_POST['tgl_lahir'],
 					'level' => $level,
+					'kelas' => $kelas,
 					'email' => $_POST['email'],
 					'telepon' => $telepon,
 					'jenkel' => $jenkel,
@@ -210,6 +214,7 @@ class User extends CI_Controller
 					'tempat_lahir' => $_POST['lahir'],
 					'tgl_lahir' => $_POST['tgl_lahir'],
 					'level' => $level,
+					'kelas' => $kelas,
 					'email' => $_POST['email'],
 					'telepon' => $telepon,
 					'jenkel' => $jenkel,
@@ -244,6 +249,7 @@ class User extends CI_Controller
 					'tgl_lahir' => $_POST['tgl_lahir'],
 					'pass' => md5($pass),
 					'level' => $level,
+					'kelas' => $kelas,
 					'email' => $_POST['email'],
 					'telepon' => $telepon,
 					'foto' => $data1['upload_data']['file_name'],
@@ -272,6 +278,7 @@ class User extends CI_Controller
 					'tempat_lahir' => $_POST['lahir'],
 					'tgl_lahir' => $_POST['tgl_lahir'],
 					'level' => $level,
+					'kelas' => $kelas,
 					'email' => $_POST['email'],
 					'telepon' => $telepon,
 					'foto' => $data1['upload_data']['file_name'],

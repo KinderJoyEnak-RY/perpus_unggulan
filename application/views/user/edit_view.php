@@ -45,6 +45,10 @@
                                         <input type="password" class="form-control" name="pass" placeholder="Isi Password Jika di Perlukan Ganti">
                                     </div>
                                     <div class="form-group">
+                                        <label>Kelas</label>
+                                        <input type="text" class="form-control" value="<?= $user->kelas; ?>" name="kelas" required="required" placeholder="kelas">
+                                    </div>
+                                    <div class="form-group">
                                         <label>Level</label>
                                         <select name="level" class="form-control" <?php if ($user->level == 'Anggota') {
                                                             echo 'disabled';

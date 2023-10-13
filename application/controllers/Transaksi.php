@@ -119,7 +119,7 @@ class Transaksi extends CI_Controller
 			$tgl2 = date('Y-m-d', strtotime('+' . $post['lama'] . ' days', strtotime($tgl)));
 
 			$hasil_cart = array_values(unserialize($this->session->userdata('cart')));
-			$status = $this->session->userdata('level') === 'Anggota' ? 'Pending' : 'Dipinjam';
+			$status = $this->session->userdata('level') == 'Anggota' ? 'Pending' : 'Dipinjam';
 			foreach ($hasil_cart as $isi) {
 				$data[] = array(
 					'pinjam_id' => htmlentities($post['nopinjam']),

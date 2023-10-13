@@ -71,7 +71,7 @@
 											<td>Lama Peminjaman</td>
 											<td>:</td>
 											<td>
-												<input type="number" required placeholder="Lama Pinjam Contoh : 2 Hari (2)" name="lama" class="form-control">
+												<input type="number" required placeholder="Lama Pinjam Contoh : 2 Hari (2)" name="lama" id="lama" class="form-control">
 											</td>
 										</tr>
 									</table>
@@ -220,7 +220,7 @@
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title">Add Anggota</h4>
+				<h4 class="modal-title">Pilih Anggota</h4>
 			</div>
 			<div id="modal_body" class="modal-body fileSelection1">
 				<table id="example3" class="table table-bordered table-striped">
@@ -229,9 +229,9 @@
 							<th>No</th>
 							<th>ID</th>
 							<th>Nama</th>
-							<th>Jenkel</th>
+							<th>Jenis Kelamin</th>
 							<th>Telepon</th>
-							<th>Level</th>
+							<th>Status</th>
 							<th>Aksi</th>
 						</tr>
 					</thead>
@@ -308,3 +308,20 @@
 		});
 	});
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var inputLama = document.getElementById("lama");
+
+    inputLama.addEventListener("input", function () {
+        var lamaPinjam = parseInt(inputLama.value);
+        var maksimumHari = 2; // Ubah sesuai dengan maksimum hari yang diizinkan
+
+        if (lamaPinjam > maksimumHari) {
+            alert("Anda tidak dapat meminjam lebih dari " + maksimumHari + " hari.");
+            inputLama.value = maksimumHari;
+        }
+    });
+});
+</script>
+

@@ -87,12 +87,12 @@ $tgl2 = $hari2 . ' ' . $bl2 . ' ' . $tahun2;
 <body>
 	<div class="container">
 		<br />
-		<div class="pull-left">
+		<!-- <div class="pull-left">
 			Codekop - Preview HTML to DOC [ size paper A4 ]
-		</div>
+		</div> -->
 		<div class="pull-right">
 			<button type="button" class="btn btn-success btn-md" onclick="printDiv('printableArea')">
-				<i class="fa fa-print"> </i> Print File
+				<i class="fa fa-print"> </i> Cetak Kartu
 			</button>
 		</div>
 	</div>
@@ -102,6 +102,7 @@ $tgl2 = $hari2 . ' ' . $bl2 . ' ' . $tahun2;
 			<div class="panel panel-default">
 				<div class="panel-body bg-primary">
 					<h4 class="text-center">KARTU ANGGOTA PERPUSTAKAAN</h4>
+					<h5 class="text-center">SMP UNGGULAN AISYIYAH</h5>
 					<br />
 					<div class="row">
 						<div class="col-sm-8">
@@ -120,6 +121,11 @@ $tgl2 = $hari2 . ' ' . $bl2 . ' ' . $tahun2;
 									<td>TTL</td>
 									<td>:</td>
 									<td><?= $user->tempat_lahir; ?>, <?= $tgl2; ?></td>
+								</tr>
+								<tr>
+									<td>Kelas</td>
+									<td>:</td>
+									<td><?= $user->kelas;?></td>
 								</tr>
 								<tr>
 									<td>Alamat</td>

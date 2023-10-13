@@ -82,7 +82,7 @@
 																<td>'.$user->alamat.'</td>
 															</tr>
 															<tr>
-																<td>Level</td>
+																<td>Status</td>
 																<td>:</td>
 																<td>'.$user->level.'</td>
 															</tr>

@@ -31,9 +31,10 @@
                                         <th>ID</th>
                                         <th>Foto</th>
                                         <th>Nama</th>
-                                        <th>User</th>
-                                        <th>Jenkel</th>
-                                        <th>Telepon</th>
+                                        <th>Username</th>
+                                        <th>Jenis Kelamin</th>
+                                        <th>Kelas</th>
+                                        <th>Telefon</th>
                                         <th>Level</th>
                                         <th>Alamat</th>
                                         <th>Aksi</th>
@@ -58,6 +59,7 @@
                                             <td><?= $isi['nama']; ?></td>
                                             <td><?= $isi['user']; ?></td>
                                             <td><?= $isi['jenkel']; ?></td>
+                                            <td><?= $isi['kelas']; ?></td>
                                             <td><?= $isi['telepon']; ?></td>
                                             <td><?= $isi['level']; ?></td>
                                             <td><?= $isi['alamat']; ?></td>
@@ -65,8 +67,16 @@
                                                 <a href="<?= base_url('user/edit/' . $isi['id_login']); ?>"><button class="btn btn-success"><i class="fa fa-edit"></i></button></a>
                                                 <a href="<?= base_url('user/del/' . $isi['id_login']); ?>" onclick="return confirm('Anda yakin user akan dihapus ?');">
                                                     <button class="btn btn-danger"><i class="fa fa-trash"></i></button></a>
-                                                <a href="<?= base_url('user/detail/' . $isi['id_login']); ?>" target="_blank"><button class="btn btn-primary">
-                                                        <i class="fa fa-print"></i> Cetak Kartu</button></a>
+                                                    <button class="btn btn-primary" onclick="openWindow('<?= base_url('user/detail/' . $isi['id_login']); ?>')">
+                                                        <i class="fa fa-print"></i> Cetak Kartu
+                                                    </button>
+
+<script>
+function openWindow(url) {
+    window.open(url, '_blank', 'width=600,height=600');
+}
+</script>
+
                                             </td>
                                         </tr>
                                     <?php $no++;
@@ -80,3 +90,9 @@
         </div>
     </section>
 </div>
+
+<script>
+function openWindow(url) {
+    window.open(url, '_blank', 'width=800,height=600');
+}
+</script>
