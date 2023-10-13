@@ -54,3 +54,115 @@ ERROR - 2023-10-12 21:10:22 --> Severity: 8192 --> Required parameter $currentfo
 ERROR - 2023-10-12 21:10:22 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2118
 ERROR - 2023-10-12 21:10:22 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
 ERROR - 2023-10-12 21:10:22 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:26:41 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:26:41 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:26:41 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:26:41 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:26:41 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:26:41 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2118
+ERROR - 2023-10-12 21:26:42 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:26:42 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:26:57 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:26:57 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:26:57 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:26:57 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:26:57 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:26:57 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2118
+ERROR - 2023-10-12 21:26:57 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:26:57 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:33:13 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:33:13 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:33:13 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:33:13 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:33:13 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:33:13 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:33:13 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:33:20 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:33:20 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:33:20 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:33:20 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:33:20 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:33:20 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:33:20 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:33:28 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:33:28 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:33:28 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:33:28 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:33:28 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:33:28 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:33:28 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:33:34 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:33:34 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:33:34 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:33:34 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:33:34 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:33:34 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:33:34 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:33:36 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:33:36 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:33:36 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:33:36 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:33:36 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:33:36 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:33:36 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:33:37 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:33:37 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:33:37 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:33:37 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:33:37 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:33:37 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:33:37 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:33:38 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:33:38 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:33:38 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:33:38 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:33:38 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:33:38 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:33:38 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:33:40 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:33:41 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:33:41 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:33:41 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:33:41 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:33:41 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:33:41 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:33:41 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:33:42 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:33:42 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:33:42 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:33:42 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:33:42 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:33:42 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:33:42 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:33:57 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2018
+ERROR - 2023-10-12 21:33:57 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $isunicode C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2045
+ERROR - 2023-10-12 21:33:57 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2062
+ERROR - 2023-10-12 21:33:57 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $setbom C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2083
+ERROR - 2023-10-12 21:33:57 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2101
+ERROR - 2023-10-12 21:33:57 --> Severity: 8192 --> Required parameter $currentfont follows optional parameter $str C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_fonts.php 2118
+ERROR - 2023-10-12 21:33:57 --> Severity: 8192 --> Required parameter $tagvspaces follows optional parameter $default_css C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 1139
+ERROR - 2023-10-12 21:33:57 --> Severity: 8192 --> Required parameter $k follows optional parameter $points C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\include\tcpdf_static.php 2488
+ERROR - 2023-10-12 21:42:41 --> Severity: error --> Exception: TCPDF_FONTS::utf8Bidi(): Argument #2 ($currentfont) cannot be passed by reference C:\xampp\htdocs\perpus_unggulan\application\libraries\tcpdf\tcpdf.php 1983
+ERROR - 2023-10-12 21:45:57 --> 404 Page Not Found: Assets_style/image
+ERROR - 2023-10-12 21:50:47 --> 404 Page Not Found: Assets_style/assets
+ERROR - 2023-10-12 21:51:46 --> 404 Page Not Found: Assets_style/image
+ERROR - 2023-10-12 21:52:04 --> 404 Page Not Found: Assets_style/image
+ERROR - 2023-10-12 21:52:04 --> 404 Page Not Found: Assets_style/image
+ERROR - 2023-10-12 21:52:20 --> 404 Page Not Found: Assets_style/image
+ERROR - 2023-10-12 21:52:27 --> 404 Page Not Found: Assets_style/image
+ERROR - 2023-10-12 21:52:35 --> 404 Page Not Found: Assets_style/image
+ERROR - 2023-10-12 21:52:35 --> 404 Page Not Found: Assets_style/image
+ERROR - 2023-10-12 21:52:37 --> 404 Page Not Found: Assets_style/image
