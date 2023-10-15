@@ -19,13 +19,6 @@
 	<link rel="stylesheet" href="<?php echo base_url('assets_style/assets/dist/css/AdminLTE.min.css'); ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets_style/assets/dist/css/responsivelogin.css'); ?>">
 
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
 	<!-- Google Font -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 	<style type="text/css">
@@ -47,21 +40,119 @@
 				opacity: 50;
 			}
 		}
+
+		.navbar-inverse {
+			background-color: #28a745;
+			/* Hijau */
+			display: flex;
+			align-items: center;
+			position: relative;
+			padding: 10px;
+		}
+
+		.navbar-color {
+			color: #FFFFFF;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			text-align: center;
+		}
+
+		.navbar-color h2 {
+			color: #FFFFFF;
+			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+		}
+
+
+		.login-box-body {
+			border: 2px solid #28a745;
+			/* Hijau */
+			padding: 20px;
+			background-color: #e6ffe6;
+			/* Hijau muda */
+			border-radius: 10px;
+			/* Pembulatan sudut */
+		}
+
+		.login-logo p {
+			color: #28a745;
+			/* Hijau */
+		}
+
+		.btn-primary {
+			background-color: #28a745;
+			/* Hijau */
+			border-color: #28a745;
+			/* Hijau */
+		}
+
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary:focus {
+			background-color: #218838;
+			/* Hijau tua */
+			border-color: #218838;
+			/* Hijau tua */
+		}
+
+		.form-control {
+			border-radius: 5px;
+		}
+
+		.form-group {
+			margin-bottom: 15px;
+		}
+
+		.row {
+			margin-top: 15px;
+		}
+
+		body {
+			overflow-y: auto;
+			background: url('<?php echo base_url('assets_style/image/bg.jpg'); ?>') no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		@media (max-width: 767px) {
+			.navbar-color {
+				position: static;
+				transform: none;
+				text-align: left;
+				margin-top: 10px;
+			}
+		}
+
+		.footer {
+			background-color: #28a745;
+			/* Hijau */
+			color: #FFFFFF;
+			text-align: center;
+			padding: 10px;
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+		}
 	</style>
 </head>
 
-<body class="hold-transition login-page" style="overflow-y: hidden;background:url(
-	'<?php echo base_url('assets_style/image/SMAN6.png'); ?>')no-repeat;background-size:100%;">
+<body class="hold-transition login-page" style="overflow-y: hidden;background:url('<?php echo base_url('assets_style/image/bg.jpg'); ?>')no-repeat;background-size:100%;">
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<img src="<?php echo base_url('assets_style/image/logo.png'); ?>" alt="logo" width="120px">
+		</div>
+		<div class="navbar-text navbar-color">
+			<h2><b>PERPUSTAKAAN <br> SMP UNGGULAN AISYYAH BANTUL</b></h2>
+		</div>
+	</nav>
+
 	<div class="login-box">
-		<br />
 		<div id="tampilalert"></div>
-		<!-- /.login-logo -->
-		<div class="login-box-body" style="border:2px solid #226bbf;">
-			<p class="login-box-msg" style="font-size:16px;"></p>
+		<div class="login-box-body">
 			<div class="login-logo">
-				<img src="<?php echo base_url('assets_style/image/SMA6.png'); ?>" alt="logo" width="120px">
-				<br>
-				<a href="index.php" style="color: black;"><b>PERPUSTAKAAN <br />SMA NEGERI 6 KOTA SERANG</b></a>
+				<p><b>Login<br /></p>
 			</div>
 
 			<form action="<?= base_url('login/auth'); ?>" method="POST">
@@ -75,24 +166,25 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-6">
-					<a href="<?= base_url() ?>/login/forgot">Lupa Password</a><br>
-						<!-- /.social-auth-links -->
+						<a href="<?= base_url() ?>/login/forgot">Lupa Password</a><br>
 					</div>
 					<div class="col-xs-6" style="display: flex; gap: 0.5em;">
 						<a href="<?= base_url() ?>/login/register" class="btn btn-warning btn-flat">Register</a>
 						<button type="submit" id="loding" class="btn btn-primary btn-flat">Sign In</button>
 					</div>
-
-					<!-- /.col -->
 				</div>
 			</form>
 		</div>
-		<!-- /.login-box-body -->
-		<br />
+	</div>
+	<!-- /.login-box-body -->
+	<br />
 	</div>
 	<!-- /.login-box -->
 	<!-- Response Ajax -->
 	<div id="tampilkan"></div>
+	<footer class="footer">
+		<p>Perpustakaan adalah harta karun pengetahuan</p>
+	</footer>
 	<!-- jQuery 3 -->
 	<script src="<?php echo base_url('assets_style/assets/bower_components/jquery/dist/jquery.min.js'); ?>"></script>
 	<!-- Bootstrap 3.3.7 -->
