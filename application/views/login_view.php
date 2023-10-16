@@ -63,7 +63,6 @@
 			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 		}
 
-
 		.login-box-body {
 			border: 2px solid #28a745;
 			/* Hijau */
