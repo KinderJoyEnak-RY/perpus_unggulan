@@ -164,9 +164,9 @@
 					<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 				</div>
 				<div class="row">
-					<div class="col-xs-6">
+					<!-- <div class="col-xs-6">
 						<a href="<?= base_url() ?>/login/forgot">Lupa Password</a><br>
-					</div>
+					</div> -->
 					<div class="col-xs-6" style="display: flex; gap: 0.5em;">
 						<a href="<?= base_url() ?>/login/register" class="btn btn-warning btn-flat">Register</a>
 						<button type="submit" id="loding" class="btn btn-primary btn-flat">Sign In</button>
